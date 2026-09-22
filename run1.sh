@@ -1,0 +1,9 @@
+if [ -z "$1" ]; then
+    echo "Erreur : argument manquant. Usage: ./run1.sh nom_fichier (sans extension .dot)"
+    exit 1
+fi
+
+#tool=dot
+tool=neato
+$tool -Tpng $1.dot >$1.png
+$tool -Tsvg $1.dot >$1.svg

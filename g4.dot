@@ -1,0 +1,25 @@
+graph g4 {
+    node [image="icon_router.png" shape="none" label="\N" width=0.5 height=0.5 fixedsize=true fontsize="18pt" fontcolor="red"];
+    edge [fontsize="20pt" fontcolor="blue"];
+    H [pos="4,6!"];
+    B [pos="2,4!"];
+    G [pos="6,4!"];
+    A [pos="1,2!"];
+    D [pos="5,2!"];
+    C [pos="3,1!"];
+    F [pos="7,2!"];
+    E [pos="5,0!"];
+    H -- B [label="2"];
+    H -- G [label="14"];
+    H -- D [label="4"];
+    G -- B [label="9"];
+    B -- A [label="1"];
+    B -- C [label="2"];
+    D -- C [label="1"];
+    C -- A [label="4"];
+    G -- F [label="6"];
+    G -- D [label="3"];
+    F -- E [label="1"];
+    D -- E [label="1"];
+    C -- E [label="3"];
+}
